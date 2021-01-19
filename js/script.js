@@ -27,7 +27,21 @@ nextSelection.click(nextRightPoint);
 
 // clicco su arrow left. scorre img a sx
 
+$("body").keydown(function(e){
+  if ( event.which == 37 ) {
+    prevLeftImg();
+    prevLeftPoint();
+  }
+});
 
+// clicco su arrow right. scorre img a dx
+
+$("body").keydown(function(e){
+  if ( event.which == 39 ) {
+    nextRightImg();
+    nextRightPoint();
+  }
+});
 
 // FUNZIONI
 
